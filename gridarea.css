@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: blueviolet;
+    overflow: hidden;
+   
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 500px);
+    grid-template-rows: repeat(3, 100px 300px 100px);
+    grid-template-areas: "header header header" "nav main aside" "nav footer footer";
+    border: solid 2px black;
+}
+.header{
+    grid-area: header;
+    border: solid 2px black;
+}
+.navbar{
+    grid-area: nav;
+    border: solid 2px black;
+}
+.content{
+    grid-area: main;
+    border: solid 2px black;
+}
+.aside{
+    grid-area: aside;
+    border: solid 2px black;
+}
+.footer{
+    grid-area: footer;
+    border: solid 2px black;
+}
